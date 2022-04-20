@@ -64,6 +64,7 @@ export default {
           const id = response.data.id;
           for (const user of this.selectedUserList) {
             const body = {
+            
               leagueId: id,
               userId: user.id
             }

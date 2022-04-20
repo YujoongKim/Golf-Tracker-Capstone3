@@ -77,7 +77,7 @@ public class JdbcScoreDao implements ScoreDao{
         boolean scoreCreated = false;
         String insertScore = "insert into scores (user_id, score, course_id, match_id, golf_date) values(?, ?, ?, ?, ?)";
         jdbcTemplate.update(insertScore, userId, score, courseId, matchId, golfDate);
-
+        
         return scoreCreated;
     }
 
